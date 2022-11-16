@@ -4,7 +4,8 @@ Se realizó una página de un Club donde tiene la funcionalidad de ingresar soci
 Además, muestra los fichajes obtenidos a través de una API que busca jugadores de las mejores igas del mundo.
 API: https://www.thesportsdb.com/api.php
 
-Esto se realizó con la biblioteca de React. Como librería utilicé React-Bootstrap.
+Esto se realizó con la biblioteca de React.
+Como librería utilicé React-Bootstrap. (npm install react-bootstrap bootstrap)
 
 Espero lo disfruten.
 
