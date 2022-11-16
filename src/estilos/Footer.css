@@ -1,0 +1,17 @@
+.footer {
+    position: sticky;
+}
+
+.fondo_footer {
+    background-color: #000000;
+    color: darkgray;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.imagenChica {
+    height: 35px;
+    width: 35px;
+    letter-spacing: normal;
+    background-color: darkgray;
+}
