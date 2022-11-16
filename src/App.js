@@ -1,9 +1,10 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Fragment, useState, useEffect } from "react";
-import { Container, Image, Button, Row, Col } from "react-bootstrap";
+import { Container, Image, Button, Row, Col, Badge } from "react-bootstrap";
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Carta from "./components/Carta";
 
 function App() {
 
@@ -51,8 +52,8 @@ function App() {
     try{
       const api = await fetch('https://www.thesportsdb.com/api/v1/json/2/searchplayers.php?p=Danny%20Welbeck');
       const resultado = await api.json();
-      editar(resultado.player[0].strRender);
-      console.log(resultado.player[0].strRender);
+      editar(resultado.player[0]);
+      console.log(resultado.player[0]);
     }catch(error){
       console.log(error);
     };
@@ -63,8 +64,8 @@ function App() {
     try{
       const api = await fetch('https://www.thesportsdb.com/api/v1/json/2/searchplayers.php?p=Cristiano%20Ronaldo');
       const resultado = await api.json();
-      editar2(resultado.player[0].strRender);
-      console.log(resultado.player[0].strRender);
+      editar2(resultado.player[0]);
+      console.log(resultado.player[0]);
     }catch(error){
       console.log(error);
     };
@@ -89,17 +90,22 @@ function App() {
             <Button
               variant='success'
               onClick={consultarAPI}>
-              Mostrar fichaje temporada 2022
+              Mostrar fichaje temporada 2021/22
             </Button><br></br><br></br>
-            <Image title="Danny Welbeck" src={url}></Image><br/><br/>
+            <Carta
+              url = {url}
+            />
+            <br/><br/>
           </Col>
           <Col className="text-center">
             <Button
               variant='success'
               onClick={consultarAPI2}>
-              Mostrar próximo fichaje temporada 2023
+              Mostrar fichaje temporada 2022/23
             </Button><br></br><br></br>
-            <Image title="Cristiano Ronaldo" src={url2}></Image><br/><br/>
+            <Carta
+              url = {url2}
+            />
           </Col>
         </Row>
       </Container>
