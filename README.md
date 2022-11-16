@@ -5,7 +5,9 @@ Además, muestra los fichajes obtenidos a través de una API que busca jugadores
 API: https://www.thesportsdb.com/api.php
 
 Esto se realizó con la biblioteca de React.
-Como librería utilicé React-Bootstrap. (npm install react-bootstrap bootstrap)
+Como librería utilicé React-Bootstrap.
+
+### `npm install react-bootstrap bootstrap`
 
 Espero lo disfruten.
 
