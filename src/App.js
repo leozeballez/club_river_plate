@@ -7,8 +7,7 @@ import Header from './components/Header';
 
 function App() {
 
-  //iniciamos el almacenamiento en el navegador
-  //local storage
+  //inicio el almacenamiento local en el navegador (local storage)
   let sociosIniciales = JSON.parse(localStorage.getItem("asociados"));
   if(!sociosIniciales) {
     sociosIniciales=[];
@@ -76,36 +75,36 @@ function App() {
 
   return (
     <Fragment>
-    <Header
-    agregarSocio = {agregarSocio}
-    borrarSocio = {borrarSocio}
-    asociados = {asociados}
-    tituloPrincipal="Club Atletico River Plate"
-    titulo = {titulo}
-    titulo2 = {titulo2}
-  /><br/>
-  <Container>
-    <Row>
-      <Col className="text-center">
-        <Button
-          variant='success'
-          onClick={consultarAPI}>
-          Mostrar fichaje temporada 2022
-        </Button><br></br><br></br>
-        <Image title="Danny Welbeck" src={url}></Image><br/><br/>
-      </Col>
-      <Col className="text-center">
-        <Button
-          variant='success'
-          onClick={consultarAPI2}>
-          Mostrar próximo fichaje temporada 2023
-        </Button><br></br><br></br>
-        <Image title="Cristiano Ronaldo" src={url2}></Image><br/><br/>
-      </Col>
-    </Row>
-  </Container>
-  <Footer
-  />
+      <Header
+        agregarSocio = {agregarSocio}
+        borrarSocio = {borrarSocio}
+        asociados = {asociados}
+        tituloPrincipal="Club Atletico River Plate"
+        titulo = {titulo}
+        titulo2 = {titulo2}
+      /><br/>
+      <Container>
+        <Row>
+          <Col className="text-center">
+            <Button
+              variant='success'
+              onClick={consultarAPI}>
+              Mostrar fichaje temporada 2022
+            </Button><br></br><br></br>
+            <Image title="Danny Welbeck" src={url}></Image><br/><br/>
+          </Col>
+          <Col className="text-center">
+            <Button
+              variant='success'
+              onClick={consultarAPI2}>
+              Mostrar próximo fichaje temporada 2023
+            </Button><br></br><br></br>
+            <Image title="Cristiano Ronaldo" src={url2}></Image><br/><br/>
+          </Col>
+        </Row>
+      </Container>
+      <Footer
+      />
     </Fragment>
   );
 }

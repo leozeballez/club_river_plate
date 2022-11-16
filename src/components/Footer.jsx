@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Col, Container, Image, Nav, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import '../estilos/Footer.css';
 
 const Footer = () => {

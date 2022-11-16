@@ -49,8 +49,16 @@ const Header = ({agregarSocio, borrarSocio, asociados, tituloPrincipal, titulo, 
                 <br/>
                 <Row>
                     <Col><h2>{titulo}</h2></Col>
-                    <Col className='text-center'><h2>{titulo2}</h2></Col>
-                </Row><br/>
+                    <Col className='text-center'>
+                        <h2>{titulo2}</h2>
+                        {
+                            asociados.length === 0 ?
+                                <p></p>
+                            :
+                            <p>Socios totales: {asociados.length}</p>
+                        }
+                    </Col>
+                </Row>
                 <Row>
                     <Col>
                         <Formulario agregarSocio={agregarSocio}/>
@@ -59,9 +67,9 @@ const Header = ({agregarSocio, borrarSocio, asociados, tituloPrincipal, titulo, 
                         {
                         asociados.map ( socio => 
                             <Socio
-                            socio={socio}
-                            key={socio.id}
-                            borrarSocio={borrarSocio}
+                                socio={socio}
+                                key={socio.id}
+                                borrarSocio={borrarSocio}
                             />
                             )
                         }
@@ -73,6 +81,3 @@ const Header = ({agregarSocio, borrarSocio, asociados, tituloPrincipal, titulo, 
 }
  
 export default Header;
-
-    <Fragment>
-</Fragment>
