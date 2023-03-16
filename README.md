@@ -1,7 +1,7 @@
 # CLUB ATLETICO RIVER PLATE
 
 Se realizó una página de un Club donde tiene la funcionalidad de ingresar socios y queden registrados de manera local.
-Además, muestra los fichajes obtenidos a través de una API que busca jugadores de las mejores igas del mundo.
+Además, muestra los fichajes obtenidos a través de una API que busca jugadores de las mejores ligas del mundo.
 API: https://www.thesportsdb.com/api.php
 
 Esto se realizó con la biblioteca de React.
