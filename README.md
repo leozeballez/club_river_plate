@@ -9,6 +9,10 @@ Como librería utilicé React-Bootstrap.
 
 ### `npm install react-bootstrap bootstrap`
 
+Para los proyectos nuevos que quieran utilizar react-bootstrap, hay que importar en el App.js o en el Index.js el siguiente archivo:
+
+"import 'bootstrap/dist/css/bootstrap.min.css';"
+
 Espero lo disfruten.
 
 Leonel Zeballez.
